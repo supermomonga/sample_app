@@ -1,0 +1,371 @@
+...........F.........FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+Failures:
+
+  1) User return value of authenticate method with invalid password should be false
+     Failure/Error: specify { expect(user_for_invalid_password).to be_false }
+       expected false to respond to `false?`
+     # ./spec/models/user_spec.rb:95:in `block (4 levels) in <top (required)>'
+
+  2) Authentication signin page 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::SigninPage:0x007fe14d24e330>
+     # ./spec/requests/authentication_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  3) Authentication signin page 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::SigninPage:0x007fe14b955b08>
+     # ./spec/requests/authentication_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  4) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithValidInformation:0x007fe14b946d10>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  5) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithValidInformation:0x007fe14f2d6058>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  6) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithValidInformation:0x007fe14cf37340>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  7) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithValidInformation:0x007fe14f2ce268>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  8) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithValidInformation:0x007fe14f2c4e48>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  9) Authentication signin with valid information 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithValidInformation:0x007fe14f2b6280>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  10) Authentication signin with valid information followed by signout 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithValidInformation::FollowedBySignout:0x007fe14f2a4698>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  11) Authentication signin with invalid information 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithInvalidInformation:0x007fe14f28c0c0>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  12) Authentication signin with invalid information 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithInvalidInformation:0x007fe14f27f410>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  13) Authentication signin with invalid information after visiting another page 
+     Failure/Error: before { visit signin_path }
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::Authentication::Signin::WithInvalidInformation::AfterVisitingAnotherPage:0x007fe14f2756e0>
+     # ./spec/requests/authentication_pages_spec.rb:16:in `block (3 levels) in <top (required)>'
+
+  14) Authentication as wrong user submitting a PATCH request to the Users#update action 
+     Failure/Error: before { sign_in user, no_capybara: true }
+     NameError:
+       undefined local variable or method `cookies' for #<RSpec::ExampleGroups::Authentication::AsWrongUser::SubmittingAPATCHRequestToTheUsersUpdateAction:0x007fe14f2667f8>
+     # ./spec/support/utilities.rb:29:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:75:in `block (3 levels) in <top (required)>'
+
+  15) Authentication as wrong user submitting a GET request to the Users#edit action 
+     Failure/Error: before { sign_in user, no_capybara: true }
+     NameError:
+       undefined local variable or method `cookies' for #<RSpec::ExampleGroups::Authentication::AsWrongUser::SubmittingAGETRequestToTheUsersEditAction:0x007fe14cef6098>
+     # ./spec/support/utilities.rb:29:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:75:in `block (3 levels) in <top (required)>'
+
+  16) Authentication as wrong user submitting a GET request to the Users#edit action 
+     Failure/Error: before { sign_in user, no_capybara: true }
+     NameError:
+       undefined local variable or method `cookies' for #<RSpec::ExampleGroups::Authentication::AsWrongUser::SubmittingAGETRequestToTheUsersEditAction:0x007fe14f24e360>
+     # ./spec/support/utilities.rb:29:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:75:in `block (3 levels) in <top (required)>'
+
+  17) Authentication authorization for non-signed-in users in the Users controller submitting to the update action 
+     Failure/Error: before { patch user_path(user) }
+     NoMethodError:
+       undefined method `user_path' for #<RSpec::ExampleGroups::Authentication::Authorization::ForNonSignedInUsers::InTheUsersController::SubmittingToTheUpdateAction:0x007fe14f1efbf8>
+     # ./spec/requests/authentication_pages_spec.rb:61:in `block (6 levels) in <top (required)>'
+
+  18) Authentication authorization for non-signed-in users in the Users controller visiting the edit page 
+     Failure/Error: before { visit edit_user_path(user) }
+     NoMethodError:
+       undefined method `edit_user_path' for #<RSpec::ExampleGroups::Authentication::Authorization::ForNonSignedInUsers::InTheUsersController::VisitingTheEditPage:0x007fe14f1bc280>
+     # ./spec/requests/authentication_pages_spec.rb:56:in `block (6 levels) in <top (required)>'
+
+  19) Authentication authorization for non-signed-in users in the Users controller visiting the user index 
+     Failure/Error: before { visit users_path }
+     NameError:
+       undefined local variable or method `users_path' for #<RSpec::ExampleGroups::Authentication::Authorization::ForNonSignedInUsers::InTheUsersController::VisitingTheUserIndex:0x007fe14f18de80>
+     # ./spec/requests/authentication_pages_spec.rb:65:in `block (6 levels) in <top (required)>'
+
+  20) User pages signup with valid information should create a user
+     Failure/Error: before { visit signup_path }
+     NameError:
+       undefined local variable or method `signup_path' for #<RSpec::ExampleGroups::UserPages::Signup::WithValidInformation:0x007fe14f17cf90>
+     # ./spec/requests/user_pages_spec.rb:43:in `block (3 levels) in <top (required)>'
+
+  21) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     NameError:
+       undefined local variable or method `signup_path' for #<RSpec::ExampleGroups::UserPages::Signup::WithValidInformation::AfterSavingTheUser:0x007fe14f16d5b8>
+     # ./spec/requests/user_pages_spec.rb:43:in `block (3 levels) in <top (required)>'
+
+  22) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     NameError:
+       undefined local variable or method `signup_path' for #<RSpec::ExampleGroups::UserPages::Signup::WithValidInformation::AfterSavingTheUser:0x007fe14f164f30>
+     # ./spec/requests/user_pages_spec.rb:43:in `block (3 levels) in <top (required)>'
+
+  23) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     NameError:
+       undefined local variable or method `signup_path' for #<RSpec::ExampleGroups::UserPages::Signup::WithValidInformation::AfterSavingTheUser:0x007fe14f15c0d8>
+     # ./spec/requests/user_pages_spec.rb:43:in `block (3 levels) in <top (required)>'
+
+  24) User pages signup with invalid information should not create a user
+     Failure/Error: before { visit signup_path }
+     NameError:
+       undefined local variable or method `signup_path' for #<RSpec::ExampleGroups::UserPages::Signup::WithInvalidInformation:0x007fe14f145b80>
+     # ./spec/requests/user_pages_spec.rb:43:in `block (3 levels) in <top (required)>'
+
+  25) User pages profile page 
+     Failure/Error: before { visit user_path(user) }
+     NoMethodError:
+       undefined method `user_path' for #<RSpec::ExampleGroups::UserPages::ProfilePage:0x007fe14f12c4a0>
+     # ./spec/requests/user_pages_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  26) User pages profile page 
+     Failure/Error: before { visit user_path(user) }
+     NoMethodError:
+       undefined method `user_path' for #<RSpec::ExampleGroups::UserPages::ProfilePage:0x007fe14d1f5af0>
+     # ./spec/requests/user_pages_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  27) User pages index 
+     Failure/Error: sign_in FactoryGirl.create(:user)
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Index:0x007fe14d1971f8>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:10:in `block (3 levels) in <top (required)>'
+
+  28) User pages index 
+     Failure/Error: sign_in FactoryGirl.create(:user)
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Index:0x007fe14d13fef8>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:10:in `block (3 levels) in <top (required)>'
+
+  29) User pages index should list each user
+     Failure/Error: sign_in FactoryGirl.create(:user)
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Index:0x007fe14d0f6ca8>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:10:in `block (3 levels) in <top (required)>'
+
+  30) User pages edit with invalid information 
+     Failure/Error: sign_in user
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Edit::WithInvalidInformation:0x007fe14d0c1df0>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:79:in `block (3 levels) in <top (required)>'
+
+  31) User pages edit page 
+     Failure/Error: sign_in user
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Edit::Page:0x007fe14cea4b80>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:79:in `block (3 levels) in <top (required)>'
+
+  32) User pages edit page 
+     Failure/Error: sign_in user
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Edit::Page:0x007fe14ce7c6a8>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:79:in `block (3 levels) in <top (required)>'
+
+  33) User pages edit page 
+     Failure/Error: sign_in user
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Edit::Page:0x007fe14ce4c3b8>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:79:in `block (3 levels) in <top (required)>'
+
+  34) User pages edit with valid information 
+     Failure/Error: sign_in user
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Edit::WithValidInformation:0x007fe14ce1f048>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:79:in `block (3 levels) in <top (required)>'
+
+  35) User pages edit with valid information 
+     Failure/Error: sign_in user
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Edit::WithValidInformation:0x007fe14cdee510>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:79:in `block (3 levels) in <top (required)>'
+
+  36) User pages edit with valid information 
+     Failure/Error: sign_in user
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Edit::WithValidInformation:0x007fe14cdaf9a0>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:79:in `block (3 levels) in <top (required)>'
+
+  37) User pages edit with valid information 
+     Failure/Error: sign_in user
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Edit::WithValidInformation:0x007fe14cd9ead8>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:79:in `block (3 levels) in <top (required)>'
+
+  38) User pages edit with valid information 
+     Failure/Error: sign_in user
+     NameError:
+       undefined local variable or method `signin_path' for #<RSpec::ExampleGroups::UserPages::Edit::WithValidInformation:0x007fe14cd79850>
+     # ./spec/support/utilities.rb:32:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:79:in `block (3 levels) in <top (required)>'
+
+  39) User pages signup page 
+     Failure/Error: before { visit signup_path }
+     NameError:
+       undefined local variable or method `signup_path' for #<RSpec::ExampleGroups::UserPages::SignupPage:0x007fe14f0e8610>
+     # ./spec/requests/user_pages_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  40) User pages signup page 
+     Failure/Error: before { visit signup_path }
+     NameError:
+       undefined local variable or method `signup_path' for #<RSpec::ExampleGroups::UserPages::SignupPage:0x007fe14f0d9c78>
+     # ./spec/requests/user_pages_spec.rb:35:in `block (3 levels) in <top (required)>'
+
+  41) Static pages Home page 
+     Failure/Error: before { visit root_path }
+     NameError:
+       undefined local variable or method `root_path' for #<RSpec::ExampleGroups::StaticPages::HomePage:0x007fe14cd2ea80>
+     # ./spec/requests/static_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  42) Static pages Home page 
+     Failure/Error: before { visit root_path }
+     NameError:
+       undefined local variable or method `root_path' for #<RSpec::ExampleGroups::StaticPages::HomePage:0x007fe14f0c3248>
+     # ./spec/requests/static_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  43) Static pages Home page 
+     Failure/Error: before { visit root_path }
+     NameError:
+       undefined local variable or method `root_path' for #<RSpec::ExampleGroups::StaticPages::HomePage:0x007fe14f0a9eb0>
+     # ./spec/requests/static_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  44) Static pages Help page 
+     Failure/Error: before { visit help_path }
+     NameError:
+       undefined local variable or method `help_path' for #<RSpec::ExampleGroups::StaticPages::HelpPage:0x007fe14c2a08e8>
+     # ./spec/requests/static_pages_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  45) Static pages Help page 
+     Failure/Error: before { visit help_path }
+     NameError:
+       undefined local variable or method `help_path' for #<RSpec::ExampleGroups::StaticPages::HelpPage:0x007fe14f089138>
+     # ./spec/requests/static_pages_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  46) Static pages Contact page 
+     Failure/Error: before { visit contact_path }
+     NameError:
+       undefined local variable or method `contact_path' for #<RSpec::ExampleGroups::StaticPages::ContactPage:0x007fe14f06ada0>
+     # ./spec/requests/static_pages_spec.rb:31:in `block (3 levels) in <top (required)>'
+
+  47) Static pages Contact page 
+     Failure/Error: before { visit contact_path }
+     NameError:
+       undefined local variable or method `contact_path' for #<RSpec::ExampleGroups::StaticPages::ContactPage:0x007fe14cd0dfb0>
+     # ./spec/requests/static_pages_spec.rb:31:in `block (3 levels) in <top (required)>'
+
+  48) Static pages About page 
+     Failure/Error: before { visit about_path }
+     NameError:
+       undefined local variable or method `about_path' for #<RSpec::ExampleGroups::StaticPages::AboutPage:0x007fe14f051300>
+     # ./spec/requests/static_pages_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+  49) Static pages About page 
+     Failure/Error: before { visit about_path }
+     NameError:
+       undefined local variable or method `about_path' for #<RSpec::ExampleGroups::StaticPages::AboutPage:0x007fe14f0402a8>
+     # ./spec/requests/static_pages_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+1 deprecation warning total
+
+Finished in 0.46293 seconds (files took 3.39 seconds to load)
+69 examples, 49 failures
+
+Failed examples:
+
+rspec ./spec/models/user_spec.rb:95 # User return value of authenticate method with invalid password should be false
+rspec ./spec/requests/authentication_pages_spec.rb:12 # Authentication signin page 
+rspec ./spec/requests/authentication_pages_spec.rb:11 # Authentication signin page 
+rspec ./spec/requests/authentication_pages_spec.rb:38 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:35 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:34 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:37 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:39 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:36 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:43 # Authentication signin with valid information followed by signout 
+rspec ./spec/requests/authentication_pages_spec.rb:22 # Authentication signin with invalid information 
+rspec ./spec/requests/authentication_pages_spec.rb:21 # Authentication signin with invalid information 
+rspec ./spec/requests/authentication_pages_spec.rb:26 # Authentication signin with invalid information after visiting another page 
+rspec ./spec/requests/authentication_pages_spec.rb:85 # Authentication as wrong user submitting a PATCH request to the Users#update action 
+rspec ./spec/requests/authentication_pages_spec.rb:80 # Authentication as wrong user submitting a GET request to the Users#edit action 
+rspec ./spec/requests/authentication_pages_spec.rb:79 # Authentication as wrong user submitting a GET request to the Users#edit action 
+rspec ./spec/requests/authentication_pages_spec.rb:62 # Authentication authorization for non-signed-in users in the Users controller submitting to the update action 
+rspec ./spec/requests/authentication_pages_spec.rb:57 # Authentication authorization for non-signed-in users in the Users controller visiting the edit page 
+rspec ./spec/requests/authentication_pages_spec.rb:66 # Authentication authorization for non-signed-in users in the Users controller visiting the user index 
+rspec ./spec/requests/user_pages_spec.rb:61 # User pages signup with valid information should create a user
+rspec ./spec/requests/user_pages_spec.rb:70 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:69 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:71 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:48 # User pages signup with invalid information should not create a user
+rspec ./spec/requests/user_pages_spec.rb:31 # User pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:30 # User pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:17 # User pages index 
+rspec ./spec/requests/user_pages_spec.rb:16 # User pages index 
+rspec ./spec/requests/user_pages_spec.rb:19 # User pages index should list each user
+rspec ./spec/requests/user_pages_spec.rb:92 # User pages edit with invalid information 
+rspec ./spec/requests/user_pages_spec.rb:85 # User pages edit page 
+rspec ./spec/requests/user_pages_spec.rb:84 # User pages edit page 
+rspec ./spec/requests/user_pages_spec.rb:86 # User pages edit page 
+rspec ./spec/requests/user_pages_spec.rb:109 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:107 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:106 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:110 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:108 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:38 # User pages signup page 
+rspec ./spec/requests/user_pages_spec.rb:37 # User pages signup page 
+rspec ./spec/requests/static_pages_spec.rb:12 # Static pages Home page 
+rspec ./spec/requests/static_pages_spec.rb:11 # Static pages Home page 
+rspec ./spec/requests/static_pages_spec.rb:13 # Static pages Home page 
+rspec ./spec/requests/static_pages_spec.rb:20 # Static pages Help page 
+rspec ./spec/requests/static_pages_spec.rb:19 # Static pages Help page 
+rspec ./spec/requests/static_pages_spec.rb:34 # Static pages Contact page 
+rspec ./spec/requests/static_pages_spec.rb:33 # Static pages Contact page 
+rspec ./spec/requests/static_pages_spec.rb:27 # Static pages About page 
+rspec ./spec/requests/static_pages_spec.rb:26 # Static pages About page 
+
+Randomized with seed 55552
+
